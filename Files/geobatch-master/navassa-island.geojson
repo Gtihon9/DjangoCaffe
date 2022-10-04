@@ -1,0 +1,93 @@
+{
+    "type": "FeatureCollection", 
+    "features": [
+        {
+            "geometry": {
+                "type": "Polygon", 
+                "coordinates": [
+                    [
+                        [
+                            -75.00369842978857, 
+                            18.39928407539128
+                        ], 
+                        [
+                            -75.00164764873415, 
+                            18.405436418554558
+                        ], 
+                        [
+                            -75.00164764873415, 
+                            18.413639542772245
+                        ], 
+                        [
+                            -75.00443085159372, 
+                            18.41984071405585
+                        ], 
+                        [
+                            -75.01260956175123, 
+                            18.429362197522806
+                        ], 
+                        [
+                            -75.02357147476833, 
+                            18.43556336880644
+                        ], 
+                        [
+                            -75.03319061447597, 
+                            18.434196181436818
+                        ], 
+                        [
+                            -75.03587616109486, 
+                            18.42799501015321
+                        ], 
+                        [
+                            -75.02977264605194, 
+                            18.417057511196276
+                        ], 
+                        [
+                            -75.02088592814944, 
+                            18.40338563750015
+                        ], 
+                        [
+                            -75.01260956175123, 
+                            18.39928407539128
+                        ], 
+                        [
+                            -75.00369842978857, 
+                            18.39928407539128
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "water_lg": "", 
+                "#style": "[MAPublisher Default Symbol]", 
+                "#verticals": 1.0, 
+                "#layername": "Navassa Island", 
+                "#mapx": -75.00369843, 
+                "#mapy": 18.399284075, 
+                "continent": "North America", 
+                "#rotation": 0.0, 
+                "#id": -214748364, 
+                "wg_populat": 0.0, 
+                "feature": "Possession", 
+                "state": "", 
+                "#name": "[MAPublisher Default Symbol]", 
+                "#pagex": 29.165636063, 
+                "#pagey": 69.916885376, 
+                "wg_id": 0.0, 
+                "#opacity": 100, 
+                "name_conv": "Navassa Island", 
+                "gfid": "9D8EAC9D-16B5-4183-B7E8-1956B2BEB264", 
+                "fips": "USX9", 
+                "water_sm": "", 
+                "population": 0, 
+                "country": "United States", 
+                "ocean": "", 
+                "#horizonta": 1.0, 
+                "island": "Greater Antilles", 
+                "name_loc2": "", 
+                "name_loc1": ""
+            }
+        }
+    ]
+}

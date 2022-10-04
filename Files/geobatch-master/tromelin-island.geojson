@@ -1,0 +1,77 @@
+{
+    "type": "FeatureCollection", 
+    "features": [
+        {
+            "geometry": {
+                "type": "Polygon", 
+                "coordinates": [
+                    [
+                        [
+                            54.47182633183817, 
+                            -15.977763427407979
+                        ], 
+                        [
+                            54.48305679951713, 
+                            -15.963114991304963
+                        ], 
+                        [
+                            54.481543127786495, 
+                            -15.955107179568643
+                        ], 
+                        [
+                            54.465625160554566, 
+                            -15.944950930537232
+                        ], 
+                        [
+                            54.453613442950086, 
+                            -15.948661867683313
+                        ], 
+                        [
+                            54.444629068806904, 
+                            -15.966239991006944
+                        ], 
+                        [
+                            54.44917008399884, 
+                            -15.97932592725897
+                        ], 
+                        [
+                            54.47182633183817, 
+                            -15.977763427407979
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "water_lg": "", 
+                "#style": "[MAPublisher Default Symbol]", 
+                "#verticals": 1.0, 
+                "#layername": "Tromelin Island", 
+                "#mapx": 54.471826332, 
+                "#mapy": -15.977763427, 
+                "continent": "Africa", 
+                "#rotation": 0.0, 
+                "#id": -214748364, 
+                "wg_populat": 0.0, 
+                "feature": "Possession", 
+                "state": "", 
+                "#name": "[MAPublisher Default Symbol]", 
+                "#pagex": 65.131065369, 
+                "#pagey": 79.466064453, 
+                "wg_id": 0.0, 
+                "#opacity": 100, 
+                "name_conv": "Tromelin Island", 
+                "gfid": "F3C3CF41-780B-4F04-874E-4803F0B262AD", 
+                "fips": "FRY6", 
+                "water_sm": "", 
+                "population": 0, 
+                "country": "France", 
+                "ocean": "", 
+                "#horizonta": 1.0, 
+                "island": "", 
+                "name_loc2": "", 
+                "name_loc1": ""
+            }
+        }
+    ]
+}

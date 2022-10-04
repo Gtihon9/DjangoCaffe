@@ -1,0 +1,73 @@
+{
+    "type": "FeatureCollection", 
+    "features": [
+        {
+            "geometry": {
+                "type": "Polygon", 
+                "coordinates": [
+                    [
+                        [
+                            39.777735936300815, 
+                            -21.52654219511021
+                        ], 
+                        [
+                            39.78047031104006, 
+                            -21.51682539916186
+                        ], 
+                        [
+                            39.77475742095987, 
+                            -21.4975382916262
+                        ], 
+                        [
+                            39.75273593868502, 
+                            -21.516630086680493
+                        ], 
+                        [
+                            39.757130469515914, 
+                            -21.52854414804426
+                        ], 
+                        [
+                            39.76777499975077, 
+                            -21.533817585041334
+                        ], 
+                        [
+                            39.777735936300815, 
+                            -21.52654219511021
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "water_lg": "", 
+                "#style": "[MAPublisher Default Symbol]", 
+                "#verticals": 1.0, 
+                "#layername": "Bassas da India", 
+                "#mapx": 39.777735936, 
+                "#mapy": -21.526542195, 
+                "continent": "Africa", 
+                "#rotation": 0.0, 
+                "#id": -214748364, 
+                "wg_populat": 0.0, 
+                "feature": "Possession", 
+                "state": "", 
+                "#name": "[MAPublisher Default Symbol]", 
+                "#pagex": 61.049369812, 
+                "#pagey": 81.007392883, 
+                "wg_id": 0.0, 
+                "#opacity": 100, 
+                "name_conv": "Bassas da India", 
+                "gfid": "97C25FC5-A1F1-4DC5-8162-D56D9BE7911F", 
+                "fips": "FRY2", 
+                "water_sm": "", 
+                "population": 0, 
+                "country": "France", 
+                "ocean": "", 
+                "#horizonta": 1.0, 
+                "island": "Bassas da India", 
+                "name_loc2": "", 
+                "name_loc1": ""
+            }
+        }
+    ]
+}

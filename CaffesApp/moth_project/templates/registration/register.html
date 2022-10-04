@@ -1,0 +1,40 @@
+{% extends 'moth_site\base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+
+{% block content %}
+   <h1>Register</h1>
+
+    {% for field in form %}
+        <div class="errors">
+            {{ field.errors }}
+        </div>
+    {% endfor %}
+
+    <form action="{% url 'register'%}" method="post">
+        <div class="username">
+            {{ form.username.label }}
+            {{ form.username }}
+        </div>
+        <br>
+        <div class="email">
+            {{ form.email.label }}
+            {{ form.email }}
+        </div>
+        <br>
+        <div class="password">
+            {{ form.password1.label }}
+            {{ form.password1 }}
+        </div>
+        <div class="password">
+            {{ form.password2.label }}
+            {{ form.password2 }}
+        </div>
+
+
+        {% csrf_token %}
+        <button type="submit" class="btn btn-success">submit</button>
+        <input type="hidden" name="next" value="{{ next }}" />
+    </div>
+    </form>
+{% endblock %}

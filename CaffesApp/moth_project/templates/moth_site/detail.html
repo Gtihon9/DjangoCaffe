@@ -1,0 +1,24 @@
+{% extends 'moth_site\base.html'%}
+
+{% block content %}
+    <img src="{{caffe.photo.url}}" alt="" width="250" height="250">
+    <div>
+        {{ caffe.name }}
+    </div>
+
+   <div>
+        {{ caffe.address }}
+    </div>
+
+   <div>
+        {{ caffe.open_time }} - {{ caffe.close_time }}
+   </div>
+
+   <div>
+        {{ caffe.rating }}
+   </div>
+
+   <div>
+        {{ caffe.rating }}
+   </div>
+{% endblock %}

@@ -1,0 +1,77 @@
+{
+    "type": "FeatureCollection", 
+    "features": [
+        {
+            "geometry": {
+                "type": "Polygon", 
+                "coordinates": [
+                    [
+                        [
+                            42.67832159717943, 
+                            -17.05417934037797
+                        ], 
+                        [
+                            42.664893864085, 
+                            -17.036503560813628
+                        ], 
+                        [
+                            42.63886847594196, 
+                            -17.025907858699156
+                        ], 
+                        [
+                            42.632374335936305, 
+                            -17.033085592389625
+                        ], 
+                        [
+                            42.6320325390939, 
+                            -17.040653951042827
+                        ], 
+                        [
+                            42.64936652181578, 
+                            -17.06038051166155
+                        ], 
+                        [
+                            42.66552862964946, 
+                            -17.063114886400797
+                        ], 
+                        [
+                            42.67832159717943, 
+                            -17.05417934037797
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "water_lg": "", 
+                "#style": "[MAPublisher Default Symbol]", 
+                "#verticals": 1.0, 
+                "#layername": "Juan de Nova Island", 
+                "#mapx": 42.678321597, 
+                "#mapy": -17.05417934, 
+                "continent": "Africa", 
+                "#rotation": 0.0, 
+                "#id": -214748364, 
+                "wg_populat": 0.0, 
+                "feature": "Possession", 
+                "state": "", 
+                "#name": "[MAPublisher Default Symbol]", 
+                "#pagex": 61.85508728, 
+                "#pagey": 79.765068054, 
+                "wg_id": 0.0, 
+                "#opacity": 100, 
+                "name_conv": "Juan de Nova Island", 
+                "gfid": "C03E5034-905D-44D0-81A3-2158E7E292B7", 
+                "fips": "FRY4", 
+                "water_sm": "", 
+                "population": 0, 
+                "country": "France", 
+                "ocean": "", 
+                "#horizonta": 1.0, 
+                "island": "", 
+                "name_loc2": "", 
+                "name_loc1": ""
+            }
+        }
+    ]
+}

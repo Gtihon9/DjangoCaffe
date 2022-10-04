@@ -1,0 +1,81 @@
+{
+    "type": "FeatureCollection", 
+    "features": [
+        {
+            "geometry": {
+                "type": "Polygon", 
+                "coordinates": [
+                    [
+                        [
+                            40.300782761419185, 
+                            -22.653446384515235
+                        ], 
+                        [
+                            40.30439604232461, 
+                            -22.652665134589768
+                        ], 
+                        [
+                            40.31318510398643, 
+                            -22.626542090206044
+                        ], 
+                        [
+                            40.29253080908117, 
+                            -22.626102637122926
+                        ], 
+                        [
+                            40.275294482599946, 
+                            -22.631083105397977
+                        ], 
+                        [
+                            40.27089995176905, 
+                            -22.638114354727406
+                        ], 
+                        [
+                            40.282032763207326, 
+                            -22.65393466571868
+                        ], 
+                        [
+                            40.28408354426176, 
+                            -22.65696200917995
+                        ], 
+                        [
+                            40.300782761419185, 
+                            -22.653446384515235
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "water_lg": "", 
+                "#style": "[MAPublisher Default Symbol]", 
+                "#verticals": 1.0, 
+                "#layername": "Europa Island", 
+                "#mapx": 40.300782761, 
+                "#mapy": -22.653446385, 
+                "continent": "Africa", 
+                "#rotation": 0.0, 
+                "#id": -214748364, 
+                "wg_populat": 0.0, 
+                "feature": "Possession", 
+                "state": "", 
+                "#name": "[MAPublisher Default Symbol]", 
+                "#pagex": 61.194660187, 
+                "#pagey": 81.320419312, 
+                "wg_id": 0.0, 
+                "#opacity": 100, 
+                "name_conv": "Europa Island", 
+                "gfid": "B0F90D3F-4DD3-45A7-B16C-FEB6BBB19CA3", 
+                "fips": "FRY3", 
+                "water_sm": "", 
+                "population": 0, 
+                "country": "France", 
+                "ocean": "", 
+                "#horizonta": 1.0, 
+                "island": "", 
+                "name_loc2": "", 
+                "name_loc1": "le Europa"
+            }
+        }
+    ]
+}

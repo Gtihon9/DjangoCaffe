@@ -1,0 +1,35 @@
+{% extends 'moth_site\base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+{% block content %}
+    <h1>Login</h1>
+
+<!--    Login Errors Cather -->
+    {% if form.non_field_errors %}
+            {% for error in form.non_field_errors %}
+<!--                 Login Eror -->
+                <li>{{ error }}</li>
+            {% endfor %}
+    {% endif %}
+    <br>
+
+
+    <form action="{% url 'login' %}" method="post">
+        <div class="username">
+            {{ form.username.label }}
+            {{ form.username }}
+        </div>
+        <br>
+        <div class="password">
+            {{ form.password.label }}
+            {{ form.password }}
+        </div>
+        {% csrf_token %}
+        <button type="submit" class="btn btn-success">submit</button>
+        <input type="hidden" name="next" value="{{ next }}" />
+    </form>
+
+    <a href="{% url 'password_reset' %}">Forgot password?</a>
+
+{% endblock %}

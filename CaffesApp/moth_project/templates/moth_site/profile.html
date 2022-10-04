@@ -1,0 +1,11 @@
+{% extends 'moth_site/base.html' %}
+<html>
+{% block content %}
+    <div>
+        <h1 class="Profile">Profile</h1>
+        {% csrf_token %}
+            <p >{{ User.username }}</p>
+            <p >{{ User.email}}</p>
+    </div>
+{% endblock %}
+</html>

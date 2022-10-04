@@ -1,0 +1,81 @@
+{
+    "type": "FeatureCollection", 
+    "features": [
+        {
+            "geometry": {
+                "type": "Polygon", 
+                "coordinates": [
+                    [
+                        [
+                            -109.22520395523398, 
+                            10.221159855317978
+                        ], 
+                        [
+                            -109.26751352151152, 
+                            10.288445005151175
+                        ], 
+                        [
+                            -109.33553109314985, 
+                            10.305339534789994
+                        ], 
+                        [
+                            -109.39490608748741, 
+                            10.330681329248193
+                        ], 
+                        [
+                            -109.42041878036684, 
+                            10.330778985488905
+                        ], 
+                        [
+                            -109.40352425072803, 
+                            10.271941100475146
+                        ], 
+                        [
+                            -109.40362190696871, 
+                            10.229948916979822
+                        ], 
+                        [
+                            -109.22530161147466, 
+                            10.195964545220818
+                        ], 
+                        [
+                            -109.22520395523398, 
+                            10.221159855317978
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "water_lg": "", 
+                "#style": "[MAPublisher Default Symbol]", 
+                "#verticals": 1.0, 
+                "#layername": "Clipperton Island", 
+                "#mapx": -109.225203955, 
+                "#mapy": 10.221159855, 
+                "continent": "Oceania", 
+                "#rotation": 0.0, 
+                "#id": -214748364, 
+                "wg_populat": 0.0, 
+                "feature": "Possession", 
+                "state": "", 
+                "#name": "[MAPublisher Default Symbol]", 
+                "#pagex": 19.659660339, 
+                "#pagey": 72.188583374, 
+                "wg_id": 0.0, 
+                "#opacity": 100, 
+                "name_conv": "Clipperton Island", 
+                "gfid": "06F30EC5-A8E3-4CDA-B4A9-9F427CC68E09", 
+                "fips": "FRY7", 
+                "water_sm": "", 
+                "population": 0, 
+                "country": "France", 
+                "ocean": "", 
+                "#horizonta": 1.0, 
+                "island": "", 
+                "name_loc2": "", 
+                "name_loc1": ""
+            }
+        }
+    ]
+}
