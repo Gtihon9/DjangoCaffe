@@ -1,7 +1,8 @@
+import branca
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 import folium
-from folium import plugins, FeatureGroup
+from folium import plugins, FeatureGroup, elements
 from folium.plugins import MousePosition, MiniMap
 from caffes.models import Caffe
 
@@ -10,6 +11,7 @@ def map(request):
     # Creating map
     m = folium.Map(location=[52.090151991910915, 23.69469500885926], zoom_start=16, zoom_max=40, height=800, width=1400)
     folium.Map()
+
     folium.GeoJson(data='D:\Apps\PycharmProjects\DjangoCaffesApp\CaffesApp\moth_site\\belarus.geojson',name='Belarus').add_to(m)
     # # Adding tile layers
     # folium.raster_layers.TileLayer('CartoDB Dark_Matter', name="CartoDB(Dark)").add_to(m)
@@ -24,12 +26,28 @@ def map(request):
     #     m
     # # Adding layer control button to map
     # # Adding Fullscreen button to map
-    folium.plugins.Fullscreen().add_to(m)
-    # # Adding marker to map
     feature_group = FeatureGroup(name="Coffe")
-    feature_group.add_child(folium.Marker(location=[52.090151991910915, 23.69469500885926], popup="Paragraph coffe"))
+
+    caffes_geoposition = Caffe.objects.all()
+    for caffe_geoposition in caffes_geoposition:
+        caffe_template=f"""
+        <h1> {caffe_geoposition.name}</h1><br>
+        { caffe_geoposition.open_time } - { caffe_geoposition.close_time }
+        <p>
+        <code>
+            from numpy import *<br>
+            exp(-2*pi)
+        </code>
+        </p>
+        """
+        feature_group.add_child(folium.Marker(location=[caffe_geoposition.longtitude, caffe_geoposition.latitude], popup=caffe_template))
+
     m.add_child(feature_group)
     m.add_child(folium.map.LayerControl())
+    # folium.plugins.Fullscreen().add_to(m)
+    # # Adding marker to map
+
+
     #
     # formatter = "function(num) {return L.Util.formatNum(num, 4) + ' º ';};"
     #
@@ -52,6 +70,8 @@ def map(request):
     m = m._repr_html_()
 
     caffes = Caffe.objects.all()
+    for caffe in caffes:
+        print(caffe.longtitude)
     context = {
         'm': m,
         'caffes': caffes,

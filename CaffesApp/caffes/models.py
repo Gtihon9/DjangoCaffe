@@ -13,6 +13,9 @@ class Caffe(models.Model):
     close_time = models.TimeField()
     rating = models.FloatField(max_length=10)
 
+    longtitude = models.FloatField(default=0.0)
+    latitude = models.FloatField(default=0.0)
+
 
     def __str__(self):
         return f"{self.name} ({self.address})"
