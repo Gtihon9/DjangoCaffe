@@ -1,13 +1,10 @@
 import os
 
-import branca
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse
 import folium
 from folium import plugins, FeatureGroup, elements
-from folium.plugins import MousePosition, MiniMap
-from caffes.models import Caffe
 from django.urls import reverse
+from caffes.models import Caffe
 
 
 def map(request):
@@ -32,12 +29,6 @@ def map(request):
         'cafes': cafes,
     }
     return render(request, 'moth_site/map.html', context)
-
-def detail_view(request, pk):
-    caffe = get_object_or_404(Caffe, id=pk)
-    return render(request, 'moth_site/detail.html', {
-        'caffe': caffe,
-    })
 
 def cafe_popup(cafe):
     try:
