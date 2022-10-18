@@ -1,30 +1,34 @@
 {% extends 'moth_site\base.html' %}
 {% load i18n %}
 {% load static %}
+{% block content %}
  <head>
     <title>Interactive maps for Django web apps</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
-    <link rel="stylesheet" href="{% static 'css/map.css'%}" type="text/css"/>    <!-- Icons -->
+     <link href="{% static 'css/map.css' %}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
   </head>
 <body>
-{% block content %}
+
  <div class="map">{{m | safe}}</div>
 
-<div class="row row-cols-1 row-cols-md-2">
-    {% for caffe in caffes %}
-
+<div class="row row-cols-2 row-cols-md-3">
+    {% for caffe in cafes %}
     <div class="col mb-4">
       <div class="card">
         <div class="view overlay">
 
           <img class="card-img-top" src="{{caffe.image.url }}" alt="">
           <a href="#!">
-            <div class="mask rgba-white-slight"></div>
+            <div class="mask rgba-red-slight"></div>
           </a>
         </div>
-        <div class="card-body">
-          <img src='{{ caffe.photo.url }}' width='100' height='100'/>
+        <div class="card-body ">
+          <img src='{{ caffe.photo.url }}'  width='100' height='100'/>
           <h4 class="card-title">{{caffe.name}}</h4>
           <h4>{{caffe.description}}</h4>
           <h5 class="card-title1">huy</h5>
@@ -35,5 +39,5 @@
     </div>
     {% endfor %}
   </div>
-{% endblock%}
 </body>
+{% endblock%}

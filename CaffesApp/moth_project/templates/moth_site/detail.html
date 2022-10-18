@@ -1,8 +1,11 @@
 {% extends 'moth_site\base.html'%}
-
+{% load static %}
 {% block content %}
+    <head>
+        <link href="{% static 'css/detail.css' %}" rel="stylesheet">
+    </head>
     <img src="{{caffe.photo.url}}" alt="" width="250" height="250">
-    <div>
+    <div class="caffe-name">
         {{ caffe.name }}
     </div>
 

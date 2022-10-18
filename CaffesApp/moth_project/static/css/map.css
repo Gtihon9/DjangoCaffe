@@ -1,6 +1,6 @@
-div.map {
-    width: 50%;
+.card-text {
+text-align: center;
 }
-div.lol {
-    font-size: 15px;
+.card-body {
+text-align: center;
 }

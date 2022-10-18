@@ -1,5 +1,5 @@
 import os
-
+from django.shortcuts import redirect
 from django.shortcuts import render, get_object_or_404
 import folium
 from folium import plugins, FeatureGroup, elements
@@ -9,7 +9,7 @@ from caffes.models import Caffe
 
 def map(request):
     # Creating map
-    m = folium.Map(location=[52.090151991910915, 23.69469500885926], zoom_start=16, zoom_max=40, height=800, width=1400)
+    m = folium.Map(location=[52.090151991910915, 23.69469500885926], zoom_start=16, zoom_max=40, height=800, width='80%', position='center')
 
     folium.GeoJson(data='moth_site/belarus.geojson', name='Belarus').add_to(m)
     feature_group = FeatureGroup(name="Coffe")
@@ -54,3 +54,8 @@ def cafe_popup(cafe):
         return popup
     except Exception as e:
         return repr(e)
+
+
+
+def home(request):
+    return render(request, 'moth_site/hello.html')
