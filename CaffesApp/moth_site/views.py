@@ -9,7 +9,7 @@ from caffes.models import Caffe
 
 def map(request):
     # Creating map
-    m = folium.Map(location=[52.090151991910915, 23.69469500885926], zoom_start=16, zoom_max=40, height=800, width='80%', position='center')
+    m = folium.Map(location=[52.090151991910915, 23.69469500885926], zoom_start=16, zoom_max=40, position='center')
 
     folium.GeoJson(data='moth_site/belarus.geojson', name='Belarus').add_to(m)
     feature_group = FeatureGroup(name="Coffe")
