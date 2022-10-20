@@ -5,28 +5,40 @@
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet" />
          <link href="{% static 'css/detail.css' %}" rel="stylesheet" />
+
     </head>
 <body id="css_override">
-    <img src="{{caffe.photo.url}}" alt="" width="250" height="250">
-    <div class="caffe-name">
-        {{ caffe.name }}
+    <div class="container">
+        <div class="row">
+            <div class="text-left row row-cols-md-2" >
+            <div>
+                <img src="{{caffe.photo.url}}" alt="" width="350" height="350">
+            </div>
+                <div class="text-left" style="font-size: 2em; font-style: oblique; font-family: Arial">
+                    {{ caffe.description }}
+                </div>
+            </div>
+            <div class="caffe-name text-left" style="font-size: 3em; font-style: oblique; font-family: Impact" >
+                {{ caffe.name }}
+            </div>
+
+           <div class="text-left"  style="font-size: 2em; font-style: oblique; font-family: Arial">
+               Address: {{ caffe.address }}
+            </div>
+
+           <div class="text-left"  style="font-size: 2em; font-style: oblique; font-family: Arial">
+               Work time: {{ caffe.open_time }} - {{ caffe.close_time }}
+           </div>
+
+
+
+           <div class="text-left" style="font-size: 2em; font-style: oblique; font-family: Arial">
+               Rating: {{ caffe.rating }}
+           </div>
+
+       </div>
+
     </div>
-
-   <div>
-        {{ caffe.address }}
-    </div>
-
-   <div>
-        {{ caffe.open_time }} - {{ caffe.close_time }}
-   </div>
-
-   <div>
-        {{ caffe.description }}
-   </div>
-
-   <div>
-        {{ caffe.rating }}
-   </div>
    <hr>
    <a class="btn btn-default" href="{% url 'add_comment_to_post' caffe.id %}">
         Add comment
