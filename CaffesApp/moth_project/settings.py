@@ -105,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = []
 
 # rvphlobvfnluufwl
 
-LANGUAGE_CODE = 'ru-ru'
+LANGUAGE_CODE = 'ru'
 LANGUAGES = (
     ('ru', 'Русский'),
     ('en', 'English'),
@@ -147,12 +147,15 @@ STATICFILES_DIRS = (
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_BACKEND = config("EMAIL_BACKEND")
-EMAIL_HOST = config('EMAIL_HOST')
-EMAIL_HOST_USER = config('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
-EMAIL_PORT = config('EMAIL_PORT')
-USE_TLS = config('USE_TLS', cast=bool, default=True)
-DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
+# smtp_configuration
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = config('EMAIL_HOST', cast=str)
+EMAIL_HOST_USER = config('EMAIL_HOST_USER', cast=str)
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', cast=str)
+EMAIL_PORT = config('EMAIL_PORT', cast=int)
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=False, cast=bool)
+# EMAIL_USE_SSL = config('EMAIL_USE_SSL', cast=bool, default=True)
+DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL', cast=str)
 
 EMAIL_FILE_PATH = BASE_DIR / "sent_emails"

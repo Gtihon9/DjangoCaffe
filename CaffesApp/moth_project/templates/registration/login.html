@@ -1,6 +1,9 @@
 {% extends 'moth_site\base.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
+
+
 <head>
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,6 +14,9 @@
     }
     </style>
 </head>
+
+
+
 
 <body style="background: url('../../media/coffee_beans1.jpg');">
 
@@ -23,7 +29,7 @@
             {% endfor %}
     {% endif %}
     <div>
-      <h1 class="text-center form-outline mb-4 text-color-login" >Login</h1>
+      <h1 class="text-center form-outline mb-4 text-color-login" >{% trans 'Login' %}</h1>
             <hr>
     </div>
 <section class="w-100 p-4 d-flex justify-content-center pb-4">
@@ -35,6 +41,8 @@
             </div>
                 {{ form.username }}
         </div>
+
+
         <div class="password form-outline mb-4 text-center">
             <div class="text-color-login">
                 {{ form.password.label }}
@@ -47,7 +55,7 @@
             <input type="hidden" name="next" value="{{ next }}" />
         </div>
         <div class="row mb-4">
-            <a href="{% url 'password_reset' %}"class="col text-center">Forgot password?</a>
+            <a href="{% url 'password_reset' %}"class="col text-center">{% trans 'Forgot password?' %}</a>
         </div>
     </form>
 
@@ -56,4 +64,7 @@
 
 
 </body>
+
+
+
 {% endblock %}
