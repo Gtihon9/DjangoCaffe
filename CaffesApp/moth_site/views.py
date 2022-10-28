@@ -5,6 +5,7 @@ import folium
 from folium import plugins, FeatureGroup, elements
 from django.urls import reverse
 from caffes.models import Caffe
+from django.utils.translation import gettext
 
 
 def map(request):
@@ -32,6 +33,8 @@ def map(request):
 
 def cafe_popup(cafe):
     try:
+        working_time = gettext('Working time')
+        Rate = gettext('Rate')
         cafe_template = f"""
             <h1> 
                 <a href='{reverse('detail',args=[cafe.id])}' target='_blank' > {cafe.name}</a>
@@ -42,11 +45,11 @@ def cafe_popup(cafe):
             </h1>
             
             <h5>
-                <b>Working time</b><br>{ cafe.open_time } - { cafe.close_time } 
+                <b>{ working_time }</b><br>{ cafe.open_time } - { cafe.close_time } 
             </h5>
             <hr>
             <h5>
-                <b>Rate: {cafe.rating}<b/>
+                <b>{ Rate }: {cafe.rating}<b/>
             </h5>
             
             """

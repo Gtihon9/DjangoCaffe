@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-28 13:04+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\moth_project\templates\moth_site\base.html:19
+msgid "User"
+msgstr ""
+
+#: .\moth_project\templates\moth_site\base.html:19
+msgid "admin"
+msgstr ""
+
+#: .\moth_project\templates\moth_site\base.html:22
+msgid "Logout"
+msgstr ""
+
+#: .\moth_project\templates\moth_site\base.html:24
+#: .\moth_project\templates\moth_site\hello.html:29
+#: .\moth_project\templates\registration\login.html:32
+msgid "Login"
+msgstr ""
+
+#: .\moth_project\templates\moth_site\base.html:25
+#: .\moth_project\templates\moth_site\hello.html:30
+#: .\moth_project\templates\registration\register.html:11
+msgid "Register"
+msgstr "Registrierung"
+
+#: .\moth_project\templates\moth_site\base.html:28
+msgid "Home"
+msgstr ""
+
+#: .\moth_project\templates\moth_site\hello.html:18
+msgid "menu"
+msgstr ""
+
+#: .\moth_project\templates\moth_site\hello.html:24
+msgid "MENU"
+msgstr ""
+
+#: .\moth_project\templates\moth_site\hello.html:31
+msgid "Map"
+msgstr ""
+
+#: .\moth_project\templates\moth_site\hello.html:32
+msgid "About"
+msgstr ""
+
+#: .\moth_project\templates\moth_site\map.html:37
+msgid "Read more"
+msgstr ""
+
+#: .\moth_project\templates\registration\login.html:54
+msgid "Log In"
+msgstr "Anmelden"
+
+#: .\moth_project\templates\registration\login.html:58
+msgid "Forgot password?"
+msgstr ""
+
+#: .\moth_project\templates\registration\password_reset_done.html:7
+msgid ""
+"We’ve emailed you instructions for setting your password, if an account "
+"exists with the email you entered. You should receive them shortly."
+msgstr ""
+
+#: .\moth_project\templates\registration\password_reset_done.html:9
+msgid ""
+"If you don’t receive an email, please make sure you’ve entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+
+#: .\moth_site\views.py:36
+msgid "Working time"
+msgstr ""
+
+#: .\moth_site\views.py:37
+msgid "Rate"
+msgstr ""
+
+#: .\users\forms.py:12
+msgid "Password"
+msgstr ""
+
+#: .\users\forms.py:19
+msgid "Email"
+msgstr ""

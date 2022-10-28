@@ -1,5 +1,6 @@
 {% extends 'moth_site\base.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
 <head>
     <link rel="stylesheet" href="{% static 'css/register.css' %}">
@@ -7,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 </head>
 <body>
-   <h1 class="text-center form-outline mb-4">Register</h1>
+   <h1 class="text-center form-outline mb-4">{% trans 'Register' %}</h1>
    <hr>
 
     {% for field in form %}
