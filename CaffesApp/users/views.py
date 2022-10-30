@@ -5,15 +5,18 @@ from .forms import UserCreationForm
 
 
 class Register(View):
+    """User Registration class"""
     template_name = "registration/register.html"
 
     def get(self, request):
+        """UserCreationForm"""
         context = {
             'form': UserCreationForm()
         }
         return render(request, self.template_name, context)
 
     def post(self, request):
+        """Accept form if is valid"""
         form = UserCreationForm(request.POST)
 
         if form.is_valid():

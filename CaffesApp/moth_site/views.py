@@ -1,23 +1,30 @@
-import os
-from django.shortcuts import redirect
-from django.shortcuts import render, get_object_or_404
-import folium
-from folium import plugins, FeatureGroup, elements
+import traceback
+
+from django.shortcuts import render
 from django.urls import reverse
+
+import folium
+from folium import plugins, FeatureGroup
+
 from caffes.models import Caffe
 
 
-def map(request):
-    # Creating map
-    m = folium.Map(location=[52.090151991910915, 23.69469500885926], zoom_start=16, zoom_max=40, position='center')
+
+
+def create_map(request):
+    """ Creating map obj"""
+    m = folium.Map(location=[52.090151991910915, 23.69469500885926],
+                   zoom_start=16, zoom_max=40, position='center')
 
     folium.GeoJson(data='moth_site/belarus.geojson', name='Belarus').add_to(m)
     feature_group = FeatureGroup(name="Coffe")
 
     cafes = Caffe.objects.all()
     for cafe in cafes:
-        feature_group.add_child(folium.Marker(location=[cafe.longtitude, cafe.latitude], popup=cafe_popup(cafe)))
-
+        feature_group.add_child(folium.Marker(
+            location=[cafe.longtitude, cafe.latitude], popup=cafe_popup(cafe)
+                                             )
+                                )
     m.add_child(feature_group)
     m.add_child(folium.map.LayerControl())
     folium.plugins.Fullscreen().add_to(m)
@@ -31,6 +38,7 @@ def map(request):
     return render(request, 'moth_site/map.html', context)
 
 def cafe_popup(cafe):
+    """Making Caffe_object_popup"""
     try:
         cafe_template = f"""
             <h1> 
@@ -52,10 +60,10 @@ def cafe_popup(cafe):
             """
         popup = folium.Popup(html=cafe_template)
         return popup
-    except Exception as e:
-        return repr(e)
-
-
+    except Exception:
+        traceback.print_exc()
+        return None
 
 def home(request):
+    """return to home page"""
     return render(request, 'moth_site/hello.html')
