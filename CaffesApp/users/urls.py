@@ -1,7 +1,8 @@
 from django.urls import include, path
 
-from .views import Register
 from django.contrib.auth import views
+from .views import Register
+
 
 urlpatterns = [
     path('', include('django.contrib.auth.urls')),
@@ -36,6 +37,4 @@ urlpatterns = [
     ),
 
     path('register', Register.as_view(), name='register'),
-
-
 ]
