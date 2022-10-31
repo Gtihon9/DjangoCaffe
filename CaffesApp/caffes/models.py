@@ -1,4 +1,3 @@
-from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
@@ -15,9 +14,9 @@ class Caffe(models.Model):
     longtitude = models.FloatField(default=0.0)
     latitude = models.FloatField(default=0.0)
 
-
     def __str__(self):
         return f"{self.name} ({self.address})"
+
 
 class Comment(models.Model):
     post = models.ForeignKey('Caffe', on_delete=models.CASCADE, related_name='comments')
