@@ -54,12 +54,11 @@
               </div>
               <div class="d-grid gap-2">
                 {% if user.is_authenticated and request.user.id == comment.author_id %}
-                    <button class="btn btn-success" type="button">
-                        <a class="reply text-white" href="{% url 'comment_remove' pk=comment.pk %}">Remove</a>
+                    <button class="btn btn-success " type="button">
+                        <a class="reply text-white text-decoration-none" href="{% url 'comment_remove' pk=comment.pk %}">Remove</a>
                     </button>
-
-                    <button class="btn btn-success" type="button">
-                        <a class="reply text-white" href="{% url 'comment_remove' pk=comment.pk %}">Edit</a>
+                    <button class="btn btn-success " type="button">
+                        <a class="reply text-white text-decoration-none" href="{% url 'comment_remove' pk=comment.pk %}">Edit</a>
                     </button>
                 {% endif %}
               </div>
