@@ -19,13 +19,13 @@
         {% trans 'User' %}: {{ user }} {% if user.is_superuser %}({% trans 'admin' %} ) {%endif%}
         <div>
         {% if user.is_authenticated %}
-            <a href="{% url 'logout' %}">{% trans 'Logout' %}</a>
+            <a class="text-decoration-none" href="{% url 'logout' %}">{% trans 'Logout' %}</a>
         {% else %}
-            <a href="{% url 'login' %}">{% trans 'Login' %}</a>
-            <a href="{% url 'register' %}">{% trans 'Register' %}</a>
+            <a class="text-decoration-none" href="{% url 'login' %}">{% trans 'Login' %}</a>
+            <a class="text-decoration-none" href="{% url 'register' %}">{% trans 'Register' %}</a>
 
         {% endif %}
-            <a href="{% url 'home' %}">{% trans 'Home' %}</a>
+            <a class="text-decoration-none" href="{% url 'home' %}">{% trans 'Home' %}</a>
         </div>
     </div>
     <div style="text-align: right">
