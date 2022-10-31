@@ -46,16 +46,36 @@
    </a>
    {% for comment in caffe.comments.all %}
     <div class="card mb-4 comment1 border border-2 border-secondary text-white bg-dark" style="border-radius: 0.6rem; opacity: 65%">
+
         <div class="card-body ">
-            <p>{{ comment.text|linebreaks }}</p>
+            <div class="d-flex justify-content-between">
+              <div class="p-2">
+                    <p>{{ comment.text|linebreaks }}</p>
+              </div>
+              <div class="d-grid gap-2">
+                {% if user.is_authenticated and request.user.id == comment.author_id %}
+                    <button class="btn btn-success" type="button">
+                        <a class="reply text-white" href="{% url 'comment_remove' pk=comment.pk %}">Remove</a>
+                    </button>
+
+                    <button class="btn btn-success" type="button">
+                        <a class="reply text-white" href="{% url 'comment_remove' pk=comment.pk %}">Edit</a>
+                    </button>
+                {% endif %}
+              </div>
+            </div>
+
             <div class="d-flex justify-content-between">
                 <div class="d-flex flex-row align-items-center">
                     <strong>{{ comment.author }}</strong>
+                </div>
+                <div class="d-grid gap-2  justify-content-md-end">
                 </div>
                 <div class="d-flex flex-row align-items-center">
                     {{ comment.created_date }}
                 </div>
             </div>
+
         </div>
       </div>
     {% empty %}

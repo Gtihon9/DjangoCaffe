@@ -10,8 +10,6 @@ from caffes.models import Caffe
 from django.utils.translation import gettext
 
 
-
-
 def create_map(request):
     """ Creating map obj"""
     m = folium.Map(location=[52.090151991910915, 23.69469500885926],
