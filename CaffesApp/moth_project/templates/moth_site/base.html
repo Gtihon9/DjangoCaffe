@@ -34,7 +34,7 @@
           {% get_current_language_bidi as LANGUAGE_BIDI %}
           {% get_current_language as LANGUAGE_CODE %}
           <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
-              <input name="next" type="hidden" value="/">
+              <input name="next" type="hidden" value='{{ request.path }}'>
               <select class="form-select bg-dark text-white border-secondary" name="language" onchange="this.form.submit()">
                   {% get_available_languages as LANGUAGES %}
                   {% get_language_info_list for LANGUAGES as languages %}
