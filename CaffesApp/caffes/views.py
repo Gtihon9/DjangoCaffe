@@ -22,7 +22,9 @@ def add_comment_to_post(request, pk):
             comment.save()
             return redirect('detail', pk=caffe.id)
     else:
-        form = CommentForm()
+        form = CommentForm(initial={
+            "author": request.user,
+        })
     return render(request, 'moth_site/add_comment_to_post.html', {'form': form})
 
 @login_required
