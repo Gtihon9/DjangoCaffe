@@ -3,4 +3,3 @@ from .models import Caffe, Comment
 
 admin.site.register(Caffe)
 admin.site.register(Comment)
-
