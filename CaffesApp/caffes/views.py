@@ -11,7 +11,6 @@ def detail_view(request, pk):
         'caffe': caffe,
     })
 
-
 def add_comment_to_post(request, pk):
     caffe = get_object_or_404(Caffe, id=pk)
     if request.method == "POST":
