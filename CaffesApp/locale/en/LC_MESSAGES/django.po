@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-28 13:04+0300\n"
+"POT-Creation-Date: 2022-11-02 17:26+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\moth_project\templates\moth_site\add_comment_to_post.html:22
+msgid "Add a comment"
+msgstr "Add a comment"
+
+#: .\moth_project\templates\moth_site\add_comment_to_post.html:25
+#: .\moth_project\templates\moth_site\edit_comment.html:25
+msgid "Author's name"
+msgstr "Author's name"
+
+#: .\moth_project\templates\moth_site\add_comment_to_post.html:29
+#: .\moth_project\templates\moth_site\edit_comment.html:29
+msgid "Comment"
+msgstr "Comment"
+
+#: .\moth_project\templates\moth_site\add_comment_to_post.html:35
+msgid "Send"
+msgstr "Send"
 
 #: .\moth_project\templates\moth_site\base.html:19
 msgid "User"
@@ -31,6 +49,7 @@ msgid "Logout"
 msgstr "Logout"
 
 #: .\moth_project\templates\moth_site\base.html:24
+#: .\moth_project\templates\moth_site\detail.html:49
 #: .\moth_project\templates\moth_site\hello.html:29
 #: .\moth_project\templates\registration\login.html:32
 msgid "Login"
@@ -43,8 +62,40 @@ msgid "Register"
 msgstr "Register"
 
 #: .\moth_project\templates\moth_site\base.html:28
+#: .\moth_project\templates\registration\password_reset_done.html:16
 msgid "Home"
 msgstr "Home"
+
+#: .\moth_project\templates\moth_site\detail.html:31
+msgid "Address"
+msgstr "Address"
+
+#: .\moth_project\templates\moth_site\detail.html:35
+#, fuzzy
+#| msgid "Working time"
+msgid "Work time"
+msgstr "Working time"
+
+#: .\moth_project\templates\moth_site\detail.html:39
+msgid "Rating"
+msgstr "Rating"
+
+#: .\moth_project\templates\moth_site\detail.html:46
+msgid "Add comment"
+msgstr "Add comment"
+
+#: .\moth_project\templates\moth_site\detail.html:63
+msgid "Remove"
+msgstr "Remove"
+
+#: .\moth_project\templates\moth_site\detail.html:67
+#: .\moth_project\templates\moth_site\edit_comment.html:35
+msgid "Edit"
+msgstr "Edit"
+
+#: .\moth_project\templates\moth_site\edit_comment.html:22
+msgid "Edit a comment"
+msgstr "Edit a comment"
 
 #: .\moth_project\templates\moth_site\hello.html:18
 msgid "menu"
@@ -66,6 +117,10 @@ msgstr "About"
 msgid "Read more"
 msgstr "Read more"
 
+#: .\moth_project\templates\moth_site\profile.html:5
+msgid "Profile"
+msgstr "Profile"
+
 #: .\moth_project\templates\registration\login.html:54
 msgid "Log In"
 msgstr "Log In"
@@ -74,30 +129,61 @@ msgstr "Log In"
 msgid "Forgot password?"
 msgstr "Forgot password?"
 
-#: .\moth_project\templates\registration\password_reset_done.html:7
+#: .\moth_project\templates\registration\password_reset_complete.html:5
+#: .\moth_project\templates\registration\password_reset_complete.html:12
+msgid "Password reset complete"
+msgstr ""
+
+#: .\moth_project\templates\registration\password_reset_complete.html:13
+msgid "Your new password has been set. You can log in now on the"
+msgstr ""
+
+#: .\moth_project\templates\registration\password_reset_complete.html:13
+msgid "log in page"
+msgstr ""
+
+#: .\moth_project\templates\registration\password_reset_confirm.html:14
+msgid "Set a new password"
+msgstr ""
+
+#: .\moth_project\templates\registration\password_reset_confirm.html:22
+msgid "Change my password"
+msgstr ""
+
+#: .\moth_project\templates\registration\password_reset_done.html:12
 msgid ""
 "We’ve emailed you instructions for setting your password, if an account "
 "exists with the email you entered. You should receive them shortly."
 msgstr ""
 
-#: .\moth_project\templates\registration\password_reset_done.html:9
+#: .\moth_project\templates\registration\password_reset_done.html:14
 msgid ""
 "If you don’t receive an email, please make sure you’ve entered the address "
 "you registered with, and check your spam folder."
 msgstr ""
 
-#: .\moth_site\views.py:36
+#: .\moth_project\templates\registration\password_reset_form.html:14
+#, fuzzy
+#| msgid "Password"
+msgid "Password Reset"
+msgstr "Password"
+
+#: .\moth_project\templates\registration\password_reset_form.html:22
+msgid "Reset"
+msgstr ""
+
+#: .\moth_site\views.py:42
 msgid "Working time"
 msgstr "Working time"
 
-#: .\moth_site\views.py:37
+#: .\moth_site\views.py:43
 msgid "Rate"
 msgstr "Rate"
 
-#: .\users\forms.py:12
+#: .\users\forms.py:11
 msgid "Password"
-msgstr ""
+msgstr "Password"
 
-#: .\users\forms.py:19
+#: .\users\forms.py:18
 msgid "Email"
-msgstr ""
+msgstr "Email"
