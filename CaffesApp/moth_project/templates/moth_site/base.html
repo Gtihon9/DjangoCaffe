@@ -19,13 +19,15 @@
         {% trans 'User' %}: {{ user }} {% if user.is_superuser %}({% trans 'admin' %} ) {%endif%}
         <div>
         {% if user.is_authenticated %}
-            <a class="text-decoration-none" href="{% url 'logout' %}?next={{ request.path }}">{% trans 'Logout' %}</a>
+            <a class="text-decoration-none btn btn-dark border border-radius-3 border-secondary" href="{% url 'logout' %}?next={{ request.path }}">{% trans 'Logout' %}</a>
+
         {% else %}
-            <a class="text-decoration-none" href="{% url 'login' %}">{% trans 'Login' %}</a>
-            <a class="text-decoration-none" href="{% url 'register' %}">{% trans 'Register' %}</a>
+            <a class="text-decoration-none btn btn-dark border border-radius-3 border-secondary" href="{% url 'login' %}">{% trans 'Login' %}</a>
+            <a class="text-decoration-none btn btn-dark border border-radius-3 border-secondary" href="{% url 'register' %}">{% trans 'Register' %}</a>
 
         {% endif %}
-            <a class="text-decoration-none" href="{% url 'home' %}">{% trans 'Home' %}</a>
+            <a class="text-decoration-none btn btn-dark border border-radius-3 border-secondary" href="{% url 'home' %}">{% trans 'Home' %}</a>
+            <a class="text-decoration-none btn btn-dark border border-radius-3 border-secondary" href="{% url 'map' %}?next={{ request.path }}">{% trans 'Map' %}</a>
         </div>
     </div>
     <div style="text-align: right">

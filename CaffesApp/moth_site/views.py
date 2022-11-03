@@ -42,8 +42,13 @@ def cafe_popup(cafe):
         working_time = gettext('Working time')
         Rate = gettext('Rate')
         cafe_template = f"""
+            <head>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet" />
+            </head>
+            <body>
             <h1> 
-                <a href='{reverse('detail',args=[cafe.id])}' target='_blank' > {cafe.name}</a>
+                <a class="text-decoration-none" href='{reverse('detail',args=[cafe.id])}' target='_blank' > {cafe.name}</a>
             </h1>
             <h5> {cafe.address}</h2>
             <h1> 
@@ -57,7 +62,7 @@ def cafe_popup(cafe):
             <h5>
                 <b>{ Rate }: {cafe.rating}<b/>
             </h5>
-            
+            </body>
             """
         popup = folium.Popup(html=cafe_template)
         return popup
