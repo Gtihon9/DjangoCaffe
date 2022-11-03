@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-02 17:26+0300\n"
+"POT-Creation-Date: 2022-11-03 10:37+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,13 +52,13 @@ msgstr "Выйти"
 
 #: .\moth_project\templates\moth_site\base.html:24
 #: .\moth_project\templates\moth_site\detail.html:49
-#: .\moth_project\templates\moth_site\hello.html:29
+#: .\moth_project\templates\moth_site\hello.html:50
 #: .\moth_project\templates\registration\login.html:32
 msgid "Login"
 msgstr "Вход"
 
 #: .\moth_project\templates\moth_site\base.html:25
-#: .\moth_project\templates\moth_site\hello.html:30
+#: .\moth_project\templates\moth_site\hello.html:49
 #: .\moth_project\templates\registration\register.html:11
 msgid "Register"
 msgstr "Регистрация"
@@ -97,21 +97,9 @@ msgstr "Изменить"
 msgid "Edit a comment"
 msgstr "Изменить комментарий"
 
-#: .\moth_project\templates\moth_site\hello.html:18
-msgid "menu"
-msgstr "Меню"
-
-#: .\moth_project\templates\moth_site\hello.html:24
-msgid "MENU"
-msgstr "Меню"
-
-#: .\moth_project\templates\moth_site\hello.html:31
+#: .\moth_project\templates\moth_site\hello.html:48
 msgid "Map"
 msgstr "Карта"
-
-#: .\moth_project\templates\moth_site\hello.html:32
-msgid "About"
-msgstr "О нас"
 
 #: .\moth_project\templates\moth_site\map.html:37
 msgid "Read more"
@@ -155,16 +143,17 @@ msgid ""
 "We’ve emailed you instructions for setting your password, if an account "
 "exists with the email you entered. You should receive them shortly."
 msgstr ""
-"Мы отправили вам по электронной почте инструкции по установке вашего пароля, если учетная запись "
-"с введенным вами электронным адресом существует. Вы должны получить их в ближайшее время."
+"Мы отправили вам по электронной почте инструкции по установке вашего пароля, "
+"если учетная запись с введенным вами электронным адресом существует. Вы "
+"должны получить их в ближайшее время."
 
 #: .\moth_project\templates\registration\password_reset_done.html:14
 msgid ""
 "If you don’t receive an email, please make sure you’ve entered the address "
 "you registered with, and check your spam folder."
 msgstr ""
-"Если вы не получили электронное письмо, пожалуйста, убедитесь, что вы ввели адрес "
-"на который вы зарегистрировались, и проверьте свою папку со спамом."
+"Если вы не получили электронное письмо, пожалуйста, убедитесь, что вы ввели "
+"адрес на который вы зарегистрировались, и проверьте свою папку со спамом."
 
 #: .\moth_project\templates\registration\password_reset_form.html:14
 msgid "Password Reset"
@@ -189,3 +178,12 @@ msgstr "Пароль"
 #: .\users\forms.py:18
 msgid "Email"
 msgstr "Email"
+
+#~ msgid "menu"
+#~ msgstr "Меню"
+
+#~ msgid "MENU"
+#~ msgstr "Меню"
+
+#~ msgid "About"
+#~ msgstr "О нас"

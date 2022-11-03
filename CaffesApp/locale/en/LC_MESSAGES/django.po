@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-02 17:26+0300\n"
+"POT-Creation-Date: 2022-11-03 10:37+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,13 +50,13 @@ msgstr "Logout"
 
 #: .\moth_project\templates\moth_site\base.html:24
 #: .\moth_project\templates\moth_site\detail.html:49
-#: .\moth_project\templates\moth_site\hello.html:29
+#: .\moth_project\templates\moth_site\hello.html:50
 #: .\moth_project\templates\registration\login.html:32
 msgid "Login"
 msgstr "Login"
 
 #: .\moth_project\templates\moth_site\base.html:25
-#: .\moth_project\templates\moth_site\hello.html:30
+#: .\moth_project\templates\moth_site\hello.html:49
 #: .\moth_project\templates\registration\register.html:11
 msgid "Register"
 msgstr "Register"
@@ -97,21 +97,9 @@ msgstr "Edit"
 msgid "Edit a comment"
 msgstr "Edit a comment"
 
-#: .\moth_project\templates\moth_site\hello.html:18
-msgid "menu"
-msgstr "menu"
-
-#: .\moth_project\templates\moth_site\hello.html:24
-msgid "MENU"
-msgstr "MENU"
-
-#: .\moth_project\templates\moth_site\hello.html:31
+#: .\moth_project\templates\moth_site\hello.html:48
 msgid "Map"
 msgstr "Map"
-
-#: .\moth_project\templates\moth_site\hello.html:32
-msgid "About"
-msgstr "About"
 
 #: .\moth_project\templates\moth_site\map.html:37
 msgid "Read more"
@@ -187,3 +175,12 @@ msgstr "Password"
 #: .\users\forms.py:18
 msgid "Email"
 msgstr "Email"
+
+#~ msgid "menu"
+#~ msgstr "menu"
+
+#~ msgid "MENU"
+#~ msgstr "MENU"
+
+#~ msgid "About"
+#~ msgstr "About"
